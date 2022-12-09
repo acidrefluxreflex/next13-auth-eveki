@@ -1,7 +1,4 @@
 "use client";
-
-
-import React, { useState } from "react";
 import GoogleLogin from "../components/GoogleLogin";
 import MailLogin from "../components/MailLogin";
 
