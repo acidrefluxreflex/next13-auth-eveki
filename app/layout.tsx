@@ -1,6 +1,6 @@
 //"use client";
 import "../styles/globals.css";
-import { AuthContextProvider } from "./context/AuthContext";
+import { AuthContextProvider } from "./components/context/AuthContext";
 import Navbar from "./components/Navbar";
 export default function RootLayout({
   children,
@@ -19,7 +19,7 @@ export default function RootLayout({
         <AuthContextProvider>
           <Navbar />
           {children}
-          </AuthContextProvider>
+        </AuthContextProvider>
       </body>
     </html>
   );

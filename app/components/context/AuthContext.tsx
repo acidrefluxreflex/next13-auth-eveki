@@ -9,7 +9,7 @@ import {
   GoogleAuthProvider,
   signOut,
 } from "firebase/auth";
-import { auth } from "../../lib/firebase";
+import { auth } from "../../../lib/firebase";
 
 const AuthContext = createContext<any>({});
 
@@ -63,7 +63,9 @@ export const AuthContextProvider = ({
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, mailLogin, googleLogin, signup, logout }}>
+    <AuthContext.Provider
+      value={{ user, login, mailLogin, googleLogin, signup, logout }}
+    >
       {loading ? null : children}
     </AuthContext.Provider>
   );

@@ -1,8 +1,11 @@
+import Link from "next/link";
+import unsplash from "../../public/unsplash.webp"
+
 export default function HeroSection() {
   return (
     <div
       className="hero min-h-screen"
-      style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}
+      style={{ backgroundImage: `url(unsplash.webp)` }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
@@ -13,7 +16,9 @@ export default function HeroSection() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">
+            <Link href="/dashboard">Get Started</Link>
+            </button>
         </div>
       </div>
     </div>

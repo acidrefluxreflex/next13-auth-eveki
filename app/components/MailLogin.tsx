@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "./context/AuthContext";
 
 export default function MailLogin() {
   const router = useRouter();
@@ -28,7 +28,6 @@ export default function MailLogin() {
   return (
     <div
       style={{
-      
         margin: "auto",
       }}
     >
@@ -47,21 +46,20 @@ export default function MailLogin() {
           className="input input-bordered w-full max-w-xs"
         />
 
-      
-          <input
-            onChange={(e: any) =>
-              setData({
-                ...data,
-                password: e.target.value,
-              })
-            }
-            value={data.password}
-            required
-            type="password"
-            placeholder="Password"
-            className="input input-bordered w-full max-w-xs"
-          />
-        
+        <input
+          onChange={(e: any) =>
+            setData({
+              ...data,
+              password: e.target.value,
+            })
+          }
+          value={data.password}
+          required
+          type="password"
+          placeholder="Password"
+          className="input input-bordered w-full max-w-xs"
+        />
+
         <Button variant="primary" type="submit">
           Login
         </Button>
