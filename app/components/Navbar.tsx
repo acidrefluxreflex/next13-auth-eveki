@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import Link from "next/link";
-import { useAuth } from "../app/context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import { useRouter } from "next/navigation";
 
 const NavbarComp = () => {
@@ -30,11 +30,7 @@ const NavbarComp = () => {
                 </Nav.Link>
               </div>
             ) : (
-              <>
-                <Link href="/signup" />
-                <Link href="/login" />
-                 
-              </>
+              <></>
             )}
           </Nav>
         </Navbar.Collapse>
