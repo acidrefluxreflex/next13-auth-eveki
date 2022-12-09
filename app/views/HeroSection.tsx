@@ -1,5 +1,6 @@
 import Link from "next/link";
-import unsplash from "../../public/unsplash.webp"
+import AppStoreButton from "../components/AppStoreButton";
+
 
 export default function HeroSection() {
   return (
@@ -16,9 +17,11 @@ export default function HeroSection() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
+
           <button className="btn btn-primary">
             <Link href="/dashboard">Get Started</Link>
             </button>
+            <AppStoreButton />
         </div>
       </div>
     </div>
