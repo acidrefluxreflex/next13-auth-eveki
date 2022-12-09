@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 
-const Login = () => {
+export default function MailLogin() {
   const router = useRouter();
   const { user, login } = useAuth();
   const [data, setData] = useState({
@@ -73,4 +73,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+

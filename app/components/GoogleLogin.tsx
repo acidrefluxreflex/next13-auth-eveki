@@ -20,7 +20,7 @@ export default function GoogleLogin()  {
 
     return (
         <div>
-            <button onClick={handleLogin}></button>
+            <button onClick={handleLogin}>google</button>
         </div>
     )
 }
