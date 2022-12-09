@@ -1,8 +1,9 @@
 import Link from "next/link";
 
+
 export default function Navbar() {
   return (
-    <nav className="sticky top-0  navbar bg-base-100 z-50">
+    <nav className="sticky top-0 bg-base-100/75 navbar bg-clip-padding backdrop-filter backdrop-blur-md  z-50 drop-shadow-md ">
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost normal-case text-xl">
           Eveki
