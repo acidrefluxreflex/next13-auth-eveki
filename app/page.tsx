@@ -1,13 +1,13 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import HeroSection from "./views/HeroSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-     
+      <HeroSection />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js 13!</a>
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </main>
 
-     <Footer />
+      <Footer />
     </div>
   );
 }

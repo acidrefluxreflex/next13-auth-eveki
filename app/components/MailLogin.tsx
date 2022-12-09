@@ -28,31 +28,27 @@ export default function MailLogin() {
   return (
     <div
       style={{
-        width: "40%",
+      
         margin: "auto",
       }}
     >
-      <h1 className="text-center my-3 ">Login</h1>
-      <Form onSubmit={handleLogin}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            onChange={(e: any) =>
-              setData({
-                ...data,
-                email: e.target.value,
-              })
-            }
-            value={data.email}
-            required
-            type="email"
-            placeholder="Enter email"
-          />
-        </Form.Group>
+      <form onSubmit={handleLogin}>
+        <input
+          onChange={(e: any) =>
+            setData({
+              ...data,
+              email: e.target.value,
+            })
+          }
+          type="email"
+          value={data.email}
+          required
+          placeholder="Enter email"
+          className="input input-bordered w-full max-w-xs"
+        />
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
+      
+          <input
             onChange={(e: any) =>
               setData({
                 ...data,
@@ -63,14 +59,13 @@ export default function MailLogin() {
             required
             type="password"
             placeholder="Password"
+            className="input input-bordered w-full max-w-xs"
           />
-        </Form.Group>
+        
         <Button variant="primary" type="submit">
           Login
         </Button>
-      </Form>
+      </form>
     </div>
   );
-};
-
-
+}
