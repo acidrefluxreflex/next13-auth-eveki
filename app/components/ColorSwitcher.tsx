@@ -1,13 +1,18 @@
 "use client";
-import { useColorSwitcher } from 'nextjs-color-mode';
-
+import { useColorSwitcher } from "nextjs-color-mode";
 
 export default function ColorSwitcher() {
   const { toggleTheme, colorMode } = useColorSwitcher();
 
   const sunIcon = (
     <svg width="24" height="24" viewBox="0 0 24 24" focusable="false">
-      <g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor">
+      <g
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        strokeWidth="2"
+        fill="none"
+        stroke="currentColor"
+      >
         <circle cx="12" cy="12" r="5"></circle>
         <path d="M12 1v2"></path>
         <path d="M12 21v2"></path>
@@ -30,6 +35,9 @@ export default function ColorSwitcher() {
     </svg>
   );
 
-  return <button onClick={toggleTheme}>{colorMode === 'light' ? moonIcon : sunIcon}</button>;
+  return (
+    <button onClick={toggleTheme}>
+      {colorMode === "light" ? moonIcon : sunIcon}
+    </button>
+  );
 }
-

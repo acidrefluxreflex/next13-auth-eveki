@@ -1,12 +1,16 @@
 import ProtectedRoute from "../components/ProtectedRoute";
 import LogoutButton from "../components/Logout";
+import Link from "next/link";
 
 const Dashboard = () => {
   return (
-    <ProtectedRoute>
+ <div>
       <div>This route is protected</div>
       <LogoutButton />
-    </ProtectedRoute>
+      <Link href="/dashboard/setting">
+        setting
+      </Link>
+      </div>
   );
 };
 

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import ColorSwitcher from "./ColorSwitcher";
-
 
 export default function Navbar() {
   return (
@@ -11,7 +9,6 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex-none">
-<ColorSwitcher />
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">

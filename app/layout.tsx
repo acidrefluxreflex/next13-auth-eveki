@@ -2,6 +2,7 @@
 import "../styles/globals.css";
 import { AuthContextProvider } from "./components/context/AuthContext";
 import Navbar from "./components/Navbar";
+
 export default function RootLayout({
   children,
 }: {

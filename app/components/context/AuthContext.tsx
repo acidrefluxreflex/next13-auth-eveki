@@ -7,6 +7,8 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
+  sendPasswordResetEmail,
+  updatePassword,
   signOut,
 } from "firebase/auth";
 import { auth } from "../../../lib/firebase";
@@ -62,9 +64,28 @@ export const AuthContextProvider = ({
     await signOut(auth);
   };
 
+  const resetPassWord = (email: string) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
+  const updateUserPassword = (
+    newPassword: string,
+  ) => {
+    return updatePassword(user,  newPassword);
+  };
+
   return (
     <AuthContext.Provider
-      value={{ user, login, mailLogin, googleLogin, signup, logout }}
+      value={{
+        user,
+        login,
+        mailLogin,
+        googleLogin,
+        signup,
+        logout,
+        resetPassWord,
+        updateUserPassword
+      }}
     >
       {loading ? null : children}
     </AuthContext.Provider>

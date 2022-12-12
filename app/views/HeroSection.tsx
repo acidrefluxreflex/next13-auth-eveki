@@ -1,7 +1,6 @@
 import Link from "next/link";
 import AppStoreButton from "../components/AppStoreButton";
 
-
 export default function HeroSection() {
   return (
     <div
@@ -20,8 +19,8 @@ export default function HeroSection() {
 
           <button className="btn btn-primary">
             <Link href="/dashboard">Get Started</Link>
-            </button>
-            <AppStoreButton />
+          </button>
+          <AppStoreButton />
         </div>
       </div>
     </div>

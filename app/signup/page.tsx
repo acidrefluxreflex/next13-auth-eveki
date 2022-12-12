@@ -1,25 +1,18 @@
 "use client";
-import GoogleLogin from "../components/GoogleLogin";
-import MailSignup from "../components/MailSignup";
-
+import GoogleLogin from "../components/Auth/GoogleLogin";
+import MailSignup from "../components/Auth/MailSignup";
 
 const Signup = () => {
-
-
-
   return (
     <div
       style={{
-   
-        margin: "auto",  
+        margin: "auto",
       }}
       className="h-screen w-screen flex justify-center items-center text-center"
     >
       <div className="card w-96  shadow-xl bg-base-100/75 navbar bg-clip-padding backdrop-filter backdrop-blur-md  z-5 drop-shadow-md ">
         <div className="card-body mx-auto">
-          <h1 className="card-title mx-auto">
-            Signup
-          </h1>
+          <h1 className="card-title mx-auto">Signup</h1>
           <div className="container mx-auto">
             <GoogleLogin />
             <div className="divider  border-gray-100">OR</div>
