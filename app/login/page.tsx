@@ -14,8 +14,7 @@ const Login = () => {
       <div className="card w-96  shadow-xl bg-base-100/75 navbar bg-clip-padding backdrop-filter backdrop-blur-md  z-5 drop-shadow-md ">
         <div className="card-body mx-auto">
           <h1 className="card-title mx-auto">
-            Shoes!
-            <div className="badge badge-secondary mx-auto">NEW</div>
+            Login
           </h1>
           <div className="container mx-auto">
             <GoogleLogin />
