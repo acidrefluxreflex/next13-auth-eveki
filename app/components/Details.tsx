@@ -1,5 +1,5 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+import Image from "next/image";
+import cyber from "../../public/cyber.webp"
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -8,7 +8,7 @@ export const Details = ({ children }: { children: React.ReactNode }) => {
 
       <div className="card w-96 bg-base-100 shadow-xl image-full">
         <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+          <Image src={cyber} alt="Shoes" fill />
         </figure>
         <div className="card-body w-96">
           <h2 className="card-title">Shoes!</h2>
