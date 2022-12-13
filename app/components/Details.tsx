@@ -11,11 +11,10 @@ export const Details = ({ children }: { children: React.ReactNode }) => {
           <Image src={cyber} alt="Shoes" fill />
         </figure>
         <div className="card-body w-96">
-          <h2 className="card-title">Shoes!</h2>
+          <h2 className="text-2xl font-bold text-white">Shoes!</h2>
+          <div className="text-sm">
           <p>{children}</p>
           <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
           </div>
         </div>
       </div>
