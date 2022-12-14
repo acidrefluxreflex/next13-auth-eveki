@@ -6,7 +6,6 @@ export default function ContactForm() {
         id="form"
         method="post"
         target="hidden_iframe"
-       
       >
         <div className="label">お名前</div>
         <input
@@ -38,8 +37,6 @@ export default function ContactForm() {
           <input id="button" name="button" type="submit" value="送 信" />
         </div>
       </form>
-
-
     </div>
   );
 }

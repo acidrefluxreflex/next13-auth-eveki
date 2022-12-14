@@ -1,5 +1,3 @@
-
-
 export default function SideMenu() {
   return (
     <ul className="menu bg-base-400 w-56 p-2 border-3 border-slate-50">

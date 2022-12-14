@@ -1,4 +1,8 @@
-export default function WindowMockup({ children }: { children: React.ReactNode }) {
+export default function WindowMockup({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="max-w-2xl transition-colors ease-linear shadow-md">
       <div className="w-full h-12 rounded-t-lg bg-gray-200 dark:bg-gray-900 flex justify-start items-center space-x-1.5 px-4">

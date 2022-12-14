@@ -12,7 +12,13 @@ export default function FeatureSection() {
         Chat
       </h1>
       <WindowMockup>
-        <Image src={chatImage} alt="chatImage" width={700} height={600} style={{borderRadius: '5px', overflow: 'hidden'}}/>
+        <Image
+          src={chatImage}
+          alt="chatImage"
+          width={700}
+          height={600}
+          style={{ borderRadius: "5px", overflow: "hidden" }}
+        />
       </WindowMockup>
       <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
         Generate{" "}
@@ -20,7 +26,6 @@ export default function FeatureSection() {
           AI Personality
         </span>
       </h1>
-
 
       <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
         Let's{" "}

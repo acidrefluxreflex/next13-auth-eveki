@@ -6,11 +6,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (<ProtectedRoute>
-    <div className="flex flex-row">
-    <SideMenu />
-    <div className="divider lg:divider-horizontal"/> 
-    {children}
-    </div>
-    </ProtectedRoute>);
+  return (
+    <ProtectedRoute>
+      <div className="flex flex-row">
+        <SideMenu />
+        <div className="divider lg:divider-horizontal" />
+        {children}
+      </div>
+    </ProtectedRoute>
+  );
 }

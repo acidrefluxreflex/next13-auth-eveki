@@ -24,9 +24,7 @@ export default function ForgetPassword() {
     >
       <form onSubmit={reset}>
         <input
-          onChange={(e) =>
-            setEmail(e.target.value)
-          }
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           value={email}
           required

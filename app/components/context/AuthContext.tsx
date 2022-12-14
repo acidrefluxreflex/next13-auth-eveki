@@ -68,10 +68,8 @@ export const AuthContextProvider = ({
     return sendPasswordResetEmail(auth, email);
   };
 
-  const updateUserPassword = (
-    newPassword: string,
-  ) => {
-    return updatePassword(user,  newPassword);
+  const updateUserPassword = (newPassword: string) => {
+    return updatePassword(user, newPassword);
   };
 
   return (
@@ -84,7 +82,7 @@ export const AuthContextProvider = ({
         signup,
         logout,
         resetPassWord,
-        updateUserPassword
+        updateUserPassword,
       }}
     >
       {loading ? null : children}
