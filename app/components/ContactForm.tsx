@@ -7,34 +7,46 @@ export default function ContactForm() {
         method="post"
         target="hidden_iframe"
       >
-        <div className="label">お名前</div>
+        <div className="label">Name</div>
         <input
           id="name"
           name="entry.2005620554"
-          placeholder="Name"
+          placeholder="required"
           required
           type="text"
+          className="input input-bordered w-full max-w-xs"
         />
 
-        <div className="label">メールアドレス</div>
+        <div className="label">E-Mail</div>
         <input
           id="email"
           name="entry.1045781291"
-          placeholder="メールアドレス"
+          placeholder="required"
+          className="input input-bordered w-full max-w-xs"
           required
-          type="text"
+          type="email"
         />
 
-        <div className="label">メッセージ本文</div>
+        <div className="label">Message</div>
         <textarea
           id="msg"
           name="entry.839337160"
-          placeholder="メッセージ"
+          placeholder="Message"
           required
+          rows={4}
+          className="textarea textarea-bordered mt-1 block w-full"
         ></textarea>
 
         <div>
-          <input id="button" name="button" type="submit" value="送 信" />
+          <button
+            id="button"
+            name="button"
+            type="submit"
+            value="Send"
+            className="btn my-9"
+          >
+            send
+          </button>
         </div>
       </form>
     </div>
