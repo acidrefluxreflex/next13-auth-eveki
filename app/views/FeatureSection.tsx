@@ -50,7 +50,7 @@ export default function FeatureSection() {
             Share Your AI
           </span>
         </h1>
-        <div className="text-slate-400 m-3">Our AI always provides quality conversations</div>
+        <div className="text-slate-400 m-3">Share function allows you to talk with other people's AI as well</div>
         <WindowMockup>
           <Image
             src={shareAI}
