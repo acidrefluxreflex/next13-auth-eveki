@@ -1,4 +1,10 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#0083fe", // 上のバーの背景色
+    "titleBar.activeForeground": "#fffefe", // 上のバーのテキストの色
+    "activityBar.background": "#ffffff", // 左のバーの背景色
+    "activityBar.foreground": "#000000" // 左のバーのテキストの色
+  }
 }

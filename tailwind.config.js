@@ -7,7 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-   
+      fontFamily: {
+        verdana: ["Verdana"],
+      },
+      colors: {
+        // 'カラー名': 'カラーコード'
+        'edo-purple': '#76428C',
+      },
   },
 },
   plugins: [require("daisyui")],

@@ -1,14 +1,19 @@
 import Link from "next/link";
+import Eveki from "../../public/EvekiTypo.svg"
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 bg-base-100/75 navbar bg-clip-padding backdrop-filter backdrop-blur-md  z-50 drop-shadow-md ">
+    <nav className="sticky top-0 bg-edo-purple/75 navbar bg-clip-padding backdrop-filter backdrop-blur-md  z-50 drop-shadow-md ">
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost normal-case text-xl">
-          Eveki
+        <Image src="/EvekiTypo.png" alt="Vercel Logo" width={92} height={16} /> 
         </Link>
       </div>
       <div className="flex-none">
+        <Link href="/blog">
+          Blog
+        </Link>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
