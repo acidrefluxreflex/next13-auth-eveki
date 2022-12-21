@@ -12,5 +12,19 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({});
 module.exports = {
   compress: true,
+  i18n: {
+    locales: ["en", "ja"],
+    defaultLocale: "en",
+  },
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
 }
+
+module.exports = {
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
+}
+
 module.exports = nextConfig

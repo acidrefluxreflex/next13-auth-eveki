@@ -6,13 +6,18 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+ 
     extend: {
       fontFamily: {
         verdana: ["Verdana"],
+        futura: ["Futura"]
       },
       colors: {
         // 'カラー名': 'カラーコード'
         'edo-purple': '#76428C',
+        'botann': '#E03C8A',
+        'asagi': '#33A6B8',
+        'custom-gray': '#BDC0BA',
       },
   },
 },

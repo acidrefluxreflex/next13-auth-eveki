@@ -15,6 +15,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+
       <HeroSection />
       <main className={styles.main}>
         <FeatureSection />
@@ -25,8 +26,8 @@ export default function Home() {
           <ContactSection />
     
       </main>
-
+   
       <Footer />
-    </div>
+      </div>
   );
 }

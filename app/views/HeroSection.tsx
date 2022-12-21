@@ -19,7 +19,7 @@ export default function HeroSection() {
             a id nisi.
           </p>
 
-          <button className="btn btn-primary">
+          <button className="btn btn-secondary">
             <Link href="/dashboard">Get Started</Link>
           </button>
           <AppStoreButton />
