@@ -1,4 +1,12 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 export default function ContactForm() {
+  const router = useRouter();
+ const onSubmit = () => {
+
+ }
+
   return (
     <div>
       <form
@@ -6,6 +14,7 @@ export default function ContactForm() {
         id="form"
         method="post"
         target="hidden_iframe"
+        onSubmit={onSubmit}
       >
         <div className="label">Name</div>
         <input
