@@ -1,5 +1,4 @@
-import Link from "next/link";
-import AppStoreButton from "../components/AppStoreButton";
+import AppStoreButton from "../components/src/AppStoreButton";
 import TypingText from "../components/TypingText";
 
 export default function HeroSection() {

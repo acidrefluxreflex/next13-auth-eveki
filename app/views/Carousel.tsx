@@ -1,7 +1,5 @@
-import chatImage from "../../public/chat.webp";
-import character from "../../public/character.webp";
-import shareAI from "../../public/shareAI.webp";
 import Image from "next/image";
+import character from "../../public/character.webp";
 
 
 export default function Carousel() {

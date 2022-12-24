@@ -7,6 +7,7 @@ export default function Footer() {
       <footer className="footer p-10 bg-base-200 text-base-content">
         <div>
           <span className="footer-title">Services</span>
+
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
           <a className="link link-hover">Marketing</a>
@@ -14,7 +15,9 @@ export default function Footer() {
         </div>
         <div>
           <span className="footer-title">Company</span>
-          <a className="link link-hover">About us</a>
+          <Link className="link link-hover" href="/about">
+            About us
+          </Link>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
@@ -28,7 +31,7 @@ export default function Footer() {
       </footer>
       <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
         <div className="items-center grid-flow-col">
-        <EvekiLogo />
+          <EvekiLogo />
           <p>
             ACME Industries Ltd. <br />
             Providing reliable tech since 1992

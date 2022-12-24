@@ -17,12 +17,19 @@ module.exports = {
     defaultLocale: "en",
   },
   images: {
-    domains: ['images.microcms-assets.io'],
+    domains: ['https://images.microcms-assets.io'],
   },
 }
 
 module.exports = {
   images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.microcms-assets.io',
+        port: '',
+      },
+    ],
     domains: ['images.microcms-assets.io'],
   },
 }

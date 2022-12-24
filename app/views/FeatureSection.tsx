@@ -1,8 +1,8 @@
-import WindowMockup from "../components/WindowMockup";
-import chatImage from "../../public/chat.webp";
-import character from "../../public/character.webp";
-import shareAI from "../../public/shareAI.webp";
 import Image from "next/image";
+import character from "../../public/character.webp";
+import chatImage from "../../public/chat.webp";
+import shareAI from "../../public/shareAI.webp";
+import WindowMockup from "../components/WindowMockup";
 
 export default function FeatureSection() {
 

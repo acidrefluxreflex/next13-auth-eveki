@@ -6,8 +6,7 @@ import FeatureSection from "./views/FeatureSection";
 import DetailSection from "./views/DetailSection";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ContactSection from "./views/ContactSection";
-import Footer from "./components/Footer";
-
+import Footer from "./components/src/Footer";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -15,19 +14,17 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-
       <HeroSection />
       <main className={styles.main}>
         <FeatureSection />
         <DetailSection />
 
         <div className="wrapper"></div>
-        
-          <ContactSection />
-    
+
+        <ContactSection />
       </main>
-   
+
       <Footer />
-      </div>
+    </div>
   );
 }

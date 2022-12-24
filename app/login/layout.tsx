@@ -1,6 +1,6 @@
 //"use client";
 import "../../styles/globals.css";
-import Footer from "../components/Footer";
+import Footer from "../components/src/Footer";
 
 export default function RootLayout({
   children,

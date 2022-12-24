@@ -1,0 +1,41 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .blogContent h1 {
+    @apply text-4xl sm:text-5xl font-bold mt-8 mb-4;
+  }
+  .blogContent h2 {
+    @apply mb-0  text-xl sm:text-2xl font-bold;
+  }
+  .blogContent h3 {
+    @apply text-xl sm:text-lg;
+  }
+}
+.ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-auto-flow: row;
+  grid-template-areas: "title" "abstract" "date";
+}
+
+.title {
+  grid-area: title;
+}
+
+.abstract {
+  grid-area: abstract;
+}
+
+.date {
+  grid-area: date;
+}
