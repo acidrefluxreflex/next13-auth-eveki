@@ -15,7 +15,7 @@ export default function DetailSection() {
     "leading-loose font-verdana text-gray-500 dark:text-custom-gray text-sm";
 
   return (
-    <div className="container    font-futura max-w-4xl">
+    <div className="container  font-futura max-w-4xl">
       <h1 className="mb-4 text-4xl font-futura text-center font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
         <span className="text-transparent bg-clip-text bg-gradient-to-r  to-asagi from-botann">
           Features

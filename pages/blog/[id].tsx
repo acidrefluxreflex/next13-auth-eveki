@@ -1,17 +1,17 @@
-// pages/blog/[id].tsx
-
 import {
   GetStaticPaths,
   GetStaticProps,
   InferGetStaticPropsType,
-  NextPage
+  NextPage,
 } from "next";
+import BreadCrumb from "../../app/components/blog/Breadcrumb";
 
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import type { Article } from "../../@types/Article";
 import Layout from "../../app/components/BlogLayout";
 import { client } from "../../lib/microClient";
 import "./globals.css";
+import "../globals.css";
 import styles from "./page.module.css";
 
 // APIリクエストを行うパスを指定
@@ -48,8 +48,17 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   content,
 }: Props) => {
   return (
-    <Layout title={blog.title}  >
-      <div className={styles.main} >
+    <Layout title={blog.title}>
+      <BreadCrumb
+        pageTitle={blog.title}
+        blogPageInfo={{
+          categoryId: blog.category.id,
+          categoryName: blog.category.name,
+          blogTitle: blog.title,
+        }}
+      />
+      <div className={styles.main}>
+      <div className="container  font-verdana max-w-4xl">
         <img
           src={blog.eyecatch.url}
           width={800}
@@ -58,6 +67,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           className={styles.blogContentImg}
         />
         <h1 className="text-lg">{blog.title}</h1>
+        <div>{blog.category.name}</div>
         {blog.tags.map((tag) => (
           <li key={tag.id}>#{tag.tag}</li>
         ))}
@@ -68,6 +78,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             }}
           />
         </div>
+      </div>
       </div>
     </Layout>
   );
