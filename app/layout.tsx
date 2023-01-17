@@ -1,4 +1,4 @@
-//"use client";
+"use client";
 import "../styles/globals.css";
 import styles from "./page.module.css";
 import { AuthContextProvider } from "./components/context/AuthContext";
@@ -10,6 +10,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const url = new URL(location.href);
+
   return (
     <html lang="en">
       {/*
@@ -19,12 +21,11 @@ export default function RootLayout({
       <head />
 
       <body>
-      
-          <AnnounncementBanner />
-          <Navbar />
+        {url.pathname != "/jp" && <AnnounncementBanner />}
 
-          {children}
-   
+        <Navbar />
+
+        {children}
       </body>
     </html>
   );

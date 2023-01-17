@@ -12,7 +12,10 @@ export default function AnnounncementBanner() {
         else{
             showhide!.style.display="none";
         }
+        console.log(url.pathname);
     }
+
+    const url = new URL(location.href)
 
   return (
     
