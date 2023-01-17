@@ -15,7 +15,7 @@ const handler = nc().post(async (req: NextApiRequest, res: NextApiResponse) => {
   const post_comentarios = req.body;
   const response = await axios.post(url, post_comentarios);
   //console.log(response.data);
-  res.json(response.data);
+  res.status(200).json(response.data);
 });
 
 export default handler;
