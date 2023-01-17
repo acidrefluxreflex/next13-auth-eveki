@@ -7,7 +7,6 @@ import DetailSection from "./views/DetailSection";
 import {  useScroll, useTransform } from "framer-motion";
 import ContactSection from "./views/ContactSection";
 import Footer from "./components/src/Footer";
-import AnnounncementBanner from "./components/src/AnnouncementBanner";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
