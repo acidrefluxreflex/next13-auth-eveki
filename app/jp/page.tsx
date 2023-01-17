@@ -1,30 +1,22 @@
 "use client";
-import styles from "./page.module.css";
-
+import Link from "next/link";
 import HeroSection from "./views/HeroSection";
+import styles from ".././page.module.css";
 import FeatureSection from "./views/FeatureSection";
 import DetailSection from "./views/DetailSection";
-import {  useScroll, useTransform } from "framer-motion";
 import ContactSection from "./views/ContactSection";
-import Footer from "./components/src/Footer";
-import AnnounncementBanner from "./components/src/AnnouncementBanner";
-
-export default function Home() {
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
-
+import QuestionsSection from "./views/QuestionsSection";
+export default function JapanesePage() {
   return (
     <div className={styles.container}>
-
       <HeroSection />
       <main className={styles.main}>
         <FeatureSection />
         <DetailSection />
         <div className="wrapper"></div>
+        <QuestionsSection />
         <ContactSection />
       </main>
-
-      <Footer />
     </div>
   );
 }
