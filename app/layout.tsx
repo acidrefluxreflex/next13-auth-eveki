@@ -1,4 +1,4 @@
-"use client";
+//"use client";
 import "../styles/globals.css";
 import styles from "./page.module.css";
 import Navbar from "./components/src/Navbar";
@@ -9,8 +9,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const url = new URL(location.href);
-
   return (
     <html lang="en">
       {/*
@@ -20,11 +18,12 @@ export default function RootLayout({
       <head />
 
       <body>
-        {url.pathname != "/jp" && <AnnounncementBanner />}
+      
+          <AnnounncementBanner />
+          <Navbar />
 
-        <Navbar />
-
-        {children}
+          {children}
+   
       </body>
     </html>
   );
