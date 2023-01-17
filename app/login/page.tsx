@@ -2,7 +2,7 @@
 "use client";
 import GoogleLogin from "../components/Auth/GoogleLogin";
 import MailLogin from "../components/Auth/MailLogin";
-/*
+
 const Login = () => {
   return (
     <div
@@ -44,4 +44,3 @@ const Login = () => {
 };
 
 export default Login;
-*/

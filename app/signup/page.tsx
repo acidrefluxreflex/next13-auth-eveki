@@ -1,7 +1,7 @@
 "use client";
 import GoogleLogin from "../components/Auth/GoogleLogin";
 import MailSignup from "../components/Auth/MailSignup";
-/*
+
 const Signup = () => {
   return (
     <div
@@ -43,4 +43,3 @@ const Signup = () => {
 };
 
 export default Signup;
-*/

@@ -11,16 +11,14 @@ export default function HeroSection() {
       <div className="hero-content text-center items-center  text-neutral-content">
         <div className="max-w-xl">
           <h1 className="mb-5 text-7xl font-bold block">
-            <p>あなただけの</p>
-            <p>会話AI</p>
-            </h1>
+            <p>Eveki</p>
+            <p></p>
+          </h1>
           <TypingText />
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            「Eveki」は自然な対話が可能なAIキャラクターを生成することができます。設定や口調といった細かい部分もプログラミングなしで自由に設定可能です。
           </p>
-<div></div>
+          <div></div>
           <AppStoreButton width={200} />
         </div>
       </div>
