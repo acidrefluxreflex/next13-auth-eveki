@@ -19,7 +19,7 @@ export default function FeatureSection() {
           Chat
         </h1>
         <div className="text-slate-400 m-3">
-          Our AI always provides quality conversations
+          いつでも質の高い自然な会話を
         </div>
         <WindowMockup>
           <Image
@@ -39,7 +39,7 @@ export default function FeatureSection() {
           </span>
         </h1>
         <div className="text-slate-400 m-3">
-          Our AI always provides quality conversations
+          個性や性格も思いのままに
         </div>
         <WindowMockup>
           <Image
@@ -59,7 +59,7 @@ export default function FeatureSection() {
           </span>
         </h1>
         <div className="text-slate-400 m-3">
-          Share function allows you to talk with other people's AI as well
+          AIは他の人にシェアすることも可能
         </div>
         <WindowMockup>
           <Image

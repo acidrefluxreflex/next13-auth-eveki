@@ -14,6 +14,8 @@ export default function DetailSection() {
   const bodyTextClassName =
     "leading-loose font-verdana text-gray-500 dark:text-custom-gray text-sm";
 
+  const ittemsClass = "";
+
   return (
     <div className="container   max-w-4xl">
       <h1 className="mb-4 text-4xl  text-center font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
@@ -27,11 +29,10 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <ChatIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>Chat</div>
+            <div className={subTitleClassName}>チャット</div>
           </div>
           <p className={bodyTextClassName}>
-            Receive more sales by selling across multple sales channels instead
-            of just having a single point of entry.
+            まるで人間のような自然な会話を行うことができます。文脈や慣用句にも対応しています。
           </p>
         </div>
         <div className="w-full p-8 border-b md:w-1/2 lg:w-1/3 lg:border-r">
@@ -72,11 +73,10 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <MobileIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>Mobile</div>
+            <div className={subTitleClassName}>モバイル</div>
           </div>
           <p className={bodyTextClassName}>
-            Modify products with extra properties and achieve the maximum output
-            for each installed sales channel.
+            スマートフォン用に最適化されているので、どんなデバイスでも使用可能です。
           </p>
         </div>
         <div className="w-full p-8 md:w-1/2 lg:w-1/3">
@@ -84,11 +84,10 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <SmileIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>Custom</div>
+            <div className={subTitleClassName}>カスタマイズ</div>
           </div>
           <p className={bodyTextClassName}>
-            Build unique product titles and descriptions instead of spending
-            days manually editing each product.
+            会話AIの口調から人格まで、目的に応じて自由に設定することができます。
           </p>
         </div>
       </div>
