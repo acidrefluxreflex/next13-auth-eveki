@@ -23,12 +23,12 @@ export default function QuestionsSection() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h2 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
                 どんな会話ができるの？
-              </h3>
-              <p className="mt-1 text-gray-500">
+              </h2>
+              <h3 className="mt-1 text-gray-500">
                 この会話AIは、基本的にはどんな内容でも応答することが可能です。他愛ない雑談やちょっとした愚痴などでも構いません。
-              </p>
+              </h3>
             </div>
           </div>
         </div>
@@ -48,12 +48,12 @@ export default function QuestionsSection() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h2 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
                 古い機種のiPhoneでも使える?
-              </h3>
-              <p className="mt-1 text-gray-500">
+              </h2>
+              <h3 className="mt-1 text-gray-500">
                 iOS16以上にアップデートしていただければ問題ありません。軽量化を行なっているので容量も他のAIアプリに比べて使いやすいものになっています。
-              </p>
+              </h3>
             </div>
           </div>
         </div>
@@ -73,12 +73,12 @@ export default function QuestionsSection() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h2 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
                 企業や自治体として活用したい
-              </h3>
-              <p className="mt-1 text-gray-500">
+              </h2>
+              <h3 className="mt-1 text-gray-500">
                 形式や設定などご要望に合わせた制作も可能です。下のお問い合わせフォームからお気軽にご相談ください。
-              </p>
+              </h3>
             </div>
           </div>
         </div>

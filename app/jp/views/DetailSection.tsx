@@ -29,7 +29,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <ChatIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>チャット</div>
+            <h2 className={subTitleClassName}>チャット</h2>
           </div>
           <p className={bodyTextClassName}>
             まるで人間のような自然な会話を行うことができます。文脈や慣用句にも対応しています。
@@ -40,7 +40,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <CreateIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>カンタン作成</div>
+            <h2 className={subTitleClassName}>カンタン作成</h2>
           </div>
           <p className={bodyTextClassName}>
             ただ質問に答えるだけで対話AIを作成することができます。プログラミングの知識はもちろん不要です。
@@ -51,7 +51,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <ShieldIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>安全性</div>
+            <h2 className={subTitleClassName}>安全性</h2>
           </div>
           <p className={bodyTextClassName}>
             表現をフィルタリングする機能により、AIからの過激な言葉や差別的発言を防止します。
@@ -62,7 +62,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <ShareIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>シェア</div>
+            <h2 className={subTitleClassName}>シェア</h2>
           </div>
           <p className={bodyTextClassName}>
             作成したAIは簡単かつ軽量に他の人へ共有することができます。会話文を文章として出力することも可能です。
@@ -73,7 +73,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <MobileIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>モバイル</div>
+            <h2 className={subTitleClassName}>モバイル</h2>
           </div>
           <p className={bodyTextClassName}>
             スマートフォン用に最適化されているので、どんなデバイスでも使用可能です。
@@ -84,7 +84,7 @@ export default function DetailSection() {
             <div className="flex items-center justify-center w-12 h-12 text-white bg-edo-purple rounded-md">
               <SmileIcon width={iconSize} height={iconSize} />
             </div>
-            <div className={subTitleClassName}>カスタマイズ</div>
+            <h2 className={subTitleClassName}>カスタマイズ</h2>
           </div>
           <p className={bodyTextClassName}>
             会話AIの口調から人格まで、目的に応じて自由に設定することができます。
