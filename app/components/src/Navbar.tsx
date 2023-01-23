@@ -14,7 +14,7 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <div className="flex-none">
+      <div className="flex-none text-white">
         <Link href="/about" className="btn btn-ghost normal-case">About</Link>
 
           <Link href="/blog" className="btn btn-ghost normal-case" >Blog</Link>
