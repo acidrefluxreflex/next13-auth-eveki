@@ -98,12 +98,12 @@ export default function QuestionsSection() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h2 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
                 APIとして使用したい
-              </h3>
-              <p className="mt-1 text-gray-500">
+              </h2>
+              <h3 className="mt-1 text-gray-500">
                 サービスのAPIは現在テスト版です。まだ一般公開は行なっていないため、質問等ございましたらフォームをお使いください。
-              </p>
+              </h3>
             </div>
           </div>
         </div>
